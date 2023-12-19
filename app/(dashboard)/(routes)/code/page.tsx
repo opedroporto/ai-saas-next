@@ -27,7 +27,7 @@ import { useProModal } from "@/hooks/use-pro-modal";
 const CodePage = () => {
     const proModal = useProModal();
     const router = useRouter();
-    const [messages, setMessages] = useState<ChatCompletionMessageParam[]>([]);
+    const [messages, setMessages] = useState<any[]>([]);
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),

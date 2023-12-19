@@ -26,7 +26,7 @@ import { useProModal } from "@/hooks/use-pro-modal";
 const ConversationPage = () => {
     const proModal = useProModal();
     const router = useRouter();
-    const [messages, setMessages] = useState<ChatCompletionMessageParam[]>([]);
+    const [messages, setMessages] = useState<any[]>([]);
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -134,7 +134,7 @@ const ConversationPage = () => {
                             >
                                 {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
                                 <p className="text-sm">
-                                    {message.content}
+                                    { message.content }
                                 </p>
                             </div>
                         ))}
