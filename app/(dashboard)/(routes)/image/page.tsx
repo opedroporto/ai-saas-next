@@ -17,7 +17,6 @@ import { Button } from "@/components/ui/button"
 import { Empty } from "@/components/empty"
 import { Loader } from "@/components/loader"
 import { Card, CardFooter } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 
 import { amountOptions, formSchema, resolutionOptions } from "./constants";
 import { useProModal } from "@/hooks/use-pro-modal";
